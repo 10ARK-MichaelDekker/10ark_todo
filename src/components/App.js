@@ -2,7 +2,6 @@ import React from 'react';
 import AddForm from './AddForm';
 //import LoadList from './LoadList';
 import ToDo from './ToDo';
-import FishCake from './FishCake';
 import sampleToDos from '../sample-todo';
 import base from '../base';
 
@@ -20,7 +19,7 @@ class App extends React.Component {
         this.state = {
           toDos: {}
         };
-  }
+  	}
     
     //Sync with FireBase
     componentWillMount() {
@@ -59,10 +58,9 @@ class App extends React.Component {
         this.setState({ toDos });
     }
     
-    // simple alert
+    // simple alert - Use this function to populate the EDIT form with these vars
      alertClick(thisKey){
 		 alert([thisKey] + " - " + this.state.toDos[thisKey].title + " - " + this.state.toDos[thisKey].message + " - " + this.state.toDos[thisKey].status);
-		 
     }
     
     // load xml file into state
@@ -79,7 +77,6 @@ class App extends React.Component {
             <div className="container ourMain">
             <h1>To-Do List</h1>
             <AddForm addToDo={this.addToDo} />
-			<FishCake />
             <div className="toDoItemList">
                 <ul>
                     {
@@ -90,7 +87,7 @@ class App extends React.Component {
                 </ul>
             </div>
             
-              {/*<LoadList loadSamples={this.loadSamples} />*/} //for loading xml: initial state populate
+              {/*<LoadList loadSamples={this.loadSamples} />*/} {/*for loading xml: initial state populate*/}
                                  
             </div>
         )

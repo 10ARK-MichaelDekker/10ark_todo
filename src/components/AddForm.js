@@ -42,8 +42,6 @@ class AddForm extends React.Component {
                                 <option value="on hold">on hold</option>
                                 <option value="complete">complete</option>
                             </select>
-                            
-                            <input ref="temp" size="25" />
                         </div>
                     </div>
                             <div className="row formRow">
@@ -56,7 +54,6 @@ class AddForm extends React.Component {
                         <div className="col-sm-2"></div>
                         <div className="col-sm-10">
                             <button type="submit">Add</button>
-							<div onClick={() => this.props.focusInput(this.props.reactKey)}>focus on text input</div>
                         </div>
                     </div>
                 </div>
