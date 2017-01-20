@@ -10,7 +10,7 @@ class ToDo extends React.Component {
             <li className="list-item">
             
                 <div className="row">
-                    <h2>{this.props.details.title}</h2> 
+                    <h2>{this.props.details.title}</h2>
                 </div>
                 <div className="row toDoMessage">
                     {this.props.details.message}{/* - key : {this.props.reactKey}*/}

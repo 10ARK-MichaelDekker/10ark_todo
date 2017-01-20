@@ -9,11 +9,19 @@ body {
     box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
     margin:30px auto 0 auto;
 }
-.ourMain h1 {
-    font-size:16px;
+.titleBlock {
+	padding-left:0!important;
+}
+.titleBlock h1 {
+    font-size:22px;
     font-weight: bold;
     color: #7c1313;
-    padding: 0 0 0 3px;    
+    padding: 4px 0 0 0;    
+}
+.imgLogo {
+    height: 60px;
+    background:url("../img/10-Ark-Logo_Black.png") no-repeat left /contain;
+	margin:7px 0 8px 0;
 }
 .form-holder {
     width: 100%;

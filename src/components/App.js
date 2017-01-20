@@ -75,7 +75,14 @@ class App extends React.Component {
     render() {
         return (
             <div className="container ourMain">
-            <h1>To-Do List</h1>
+            <div className="row">
+				<div className="col-sm-5 imgLogo">
+					
+				</div>
+				<div className="col-sm-7 titleBlock">
+					<h1>To-Do List</h1>
+				</div>
+			</div>
             <AddForm addToDo={this.addToDo} />
             <div className="toDoItemList">
                 <ul>
