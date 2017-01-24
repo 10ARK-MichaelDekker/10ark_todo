@@ -93,7 +93,8 @@ body {
     font-size:14px;
 }
 .toDoMessage {
-    background:#bcd0f4;
+/*    background:#bcd0f4;*/
+    background:#ced6e2;
     padding:3px 3px 4px 5px;
 }
 .edit {
